@@ -1,0 +1,9 @@
+ru:
+  advice: "Введите имя пользователя stackoverflow для поиска"
+  nothing_founded: "По нику '%{nickname}' не найдено ни одного пользователя Stackoverflow"
+  nothing_questions_founded: "К сожалению, для пользователя %{nickname} ничего не найдено"
+  user_tags: "Тэги пользователя"
+  user_questions: "Вопросы, интересные пользователю"
+  tag: "Тэг"
+  question: "Вопрос"
+  user_search: "Поиск пользователя"

@@ -1,0 +1,14 @@
+%form
+  %input{type:'text',name:'nickname',maxlength:15,value:@nickname}
+  %submit
+-if @users.nil?
+  =I18n.t('advice')
+-else
+  -if @users.any?
+    %table{border:1}
+      -@users.each do |user|
+        %tr
+          %td=link_to(user.nickname,user_path(user.account_id))
+          %td=image_tag(user.profile_image,width:64,height:64)
+  -else
+    =I18n.t('nothing_founded',nickname:@nickname)

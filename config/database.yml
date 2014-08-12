@@ -1,0 +1,25 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: aip_stackoverflow_test_development
+  pool: 5
+  username: postgres
+  password:
+
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: aip_stackoverflow_test_test
+  pool: 5
+  username: aip_stackoverflow_test
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: d8q296u7v9h55o
+  host: ec2-54-221-206-165.compute-1.amazonaws.com
+  pool: 5
+  username: dazxarvddmdcql
+  password: _qHQhSFS_IVBMCK08fNL8n5XED

@@ -1,0 +1,22 @@
+%h3
+  =link_to(I18n.t('user_search'),root_path)
+%h1=link_to(@user.nickname,@user.link)
+=image_tag(@user.profile_image)
+%br
+-unless @tag_list.blank?
+  %h4=I18n.t('user_tags')
+  =@user.tag_list
+  %br
+-if @questions.any?
+  %h4=I18n.t('user_questions')
+  %table
+    %tr
+      %td=I18n.t('tag')
+      %td=I18n.t('question')
+    -@questions.each do |question|
+      %tr
+        %td
+          =question.tag.title
+        %td=link_to(question.title,question.link)
+-else
+  =I18n.t('nothing_questions_founded',nickname:@user.nickname)
